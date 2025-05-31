@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <title>Bunny board</title>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand ps-2  text-white" href="index.html"><img class="me-2" src="img/logo.png" alt="Bootstrap" width="42" height="42">Bunny Board</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="flex-grow: 0;">
+        <div class="navbar-nav">
+          <a class="nav-link text-white" aria-current="page" href="index.html">Дом</a>
+          <a class="nav-link text-white" href="about.html">О нас</a>
+          <a class="nav-link text-white" href="faq.html">Часто задаваемые вопросы</a>
+          <a class="nav-link text-white" href="reviews.html">Отзывы</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Корзина -->
+  <div class="container-fluid mt-3 d-flex justify-content-end pe-3">
+    <button class="btn btn-outline-primary" type="button" data-bs-toggle="modal" data-bs-target="#cartModal">
+      <i class="bi bi-cart"></i> <span id="cartCount" class="badge bg-danger">0</span>
+    </button>
+  </div>
+
+  <div class="container-fluid my-5 d-flex pe-3 ps-3">
+    <div class="row g-3 justify-content-center">
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xxl-2">
+        <div class="card h-100 w-100" style="width: 18rem;">
+          <img src="img/card1/card1.png" class="card-img-top p-2" alt="Дом с китом">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title mb-3">"Дом с китом" со светом "Bunny Board"</h5>
+            <p class="card-text mb-2">"Дом с китом"- большой бизидомик со светом. Свет включается внутри и снаружи дома подсвечивается элемент "Кит", выполняя функцию ночника.</p>
+            <h5 class="card-text">8260 р.</h5>
+            <div class="mt-auto">
+              <button class="btn btn-success add-to-cart w-100 mb-2" data-product="Дом с китом" data-price="8260">Добавить в корзину</button>
+              <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Подробнее
+              </button>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" style="max-width: 800px;">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">"Дом с китом" со светом "Bunny Board"</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    
+                    <div class="card h-100 w-100" style="width: 18rem;">
+                      <div id="carouselExampleDark" class="carousel carousel-dark slide" style="margin: 0 auto; width: 500px;">
+                        <div class="carousel-indicators mb-0">
+                          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="9" aria-label="Slide 10"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="10" aria-label="Slide 11"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="11" aria-label="Slide 12"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="img/card1/card1.png" class="d-block w-100" alt="..." style="height: 400px;">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/card1/card1_2.png" class="d-block w-100" alt="..." style="height: 400px;">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/card1/card1_3.png" class="d-block w-100" alt="..." style="height: 400px;">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/card1/card1_4.png" class="d-block w-100" alt="..." style="height: 400px;">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/card1/card1_5.png" class="d-block w-100" alt="..." style="height: 400px;">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/card1/card1_6.png" class="d-block w-100" alt="..." style="height: 400px;">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/card1/card1_7.png" class="d-block w-100" alt="..." style="height: 400px;">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/card1/card1_8.png" class="d-block w-100" alt="..." style="height: 400px;">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/card1/card1_9.png" class="d-block w-100" alt="..." style="height: 400px;">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/card1/card1_10.png" class="d-block w-100" alt="..." style="height: 400px;">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/card1/card1_11.png" class="d-block w-100" alt="..." style="height: 400px;">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/card1/card1_12.png" class="d-block w-100" alt="..." style="height: 400px;">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text mb-2">"Дом с китом"- большой бизидомик со светом. Свет включается внутри и снаружи дома подсвечивается элемент "Кит", выполняя функцию ночника.</p>
+                        <div class="container">
+                          <table class="table table-borderless">
+                            <tbody>
+                              <tr>
+                                <th scope="row" class="text-muted">Тип</th>
+                                <td>Бизиборд</td>
+                              </tr>
+                              <tr>
+                                <th scope="row" class="text-muted">Развитие навыков</th>
+                                <td>Воображение, Кругозор, Методики, Моторика, Фигуры, цвета, Внимание, Логика, Память, Постановка речи</td>
+                              </tr>
+                              <tr>
+                                <th scope="row" class="text-muted">Цвет</th>
+                                <td>Разноцветный</td>
+                              </tr>
+                              <tr>
+                                <th scope="row" class="text-muted">Дополнительные функции</th>
+                                <td>Развивающая, Светящаяся</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Закрыть</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xxl-2">
+        <div class="card h-100 w-100" style="width: 18rem;">
+          <img src="img/card2/card2.png" class="card-img-top p-2" alt="Я играю">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title mb-3">"Я играю" бизидом со светом "Bunny Board"</h5>
+            <p class="card-text mb-2">"Я играю"- большой бизидомик со светом для мальчиков. Свет включается внутри и снаружи дома подсвечивается элемент "Кит", выполняя функцию ночника.</p>
+            <h5 class="card-text">3540 р.</h5>
+            <div class="mt-auto">
+              <button class="btn btn-success add-to-cart w-100 mb-2" data-product="Я играю" data-price="3540">Добавить в корзину</button>
+              <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                Подробнее
+              </button>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" style="max-width: 800px;">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">"Я играю" бизидом со светом "Bunny Board"</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+            
+                    <div class="card h-100 w-100" style="width: 18rem;">
+                      <div id="carouselExampleDark2" class="carousel carousel-dark slide" style="margin: 0 auto; width: 500px;">
+                        <div class="carousel-indicators mb-0">
+                          <button type="button" data-bs-target="#carouselExampleDark2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark2" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark2" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark2" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark2" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark2" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark2" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark2" data-bs-slide-to="9" aria-label="Slide 10"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <video class="d-block w-100" autoplay loop> 
+                              <source src="img/card2/card2.mp4" type="video/mp4">
+                            </video>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/card2/card2.png" class="d-block w-100" alt="..." style="height: 458px;">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/card2/card2_2.png" class="d-block w-100" alt="..." style="height: 458px;">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/card2/card2_3.png" class="d-block w-100" alt="..." style="height: 458px;">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/card2/card2_4.png" class="d-block w-100" alt="..." style="height: 458px;">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/card2/card2_5.png" class="d-block w-100" alt="..." style="height: 458px;">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/card2/card2_6.png" class="d-block w-100" alt="..." style="height: 458px;">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/card2/card2_7.png" class="d-block w-100" alt="..." style="height: 458px;">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/card2/card2_8.png" class="d-block w-100" alt="..." style="height: 458px;">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/card2/card2_9.png" class="d-block w-100" alt="..." style="height: 458px;">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark2" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark2" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text mb-2">"Я играю"- большой бизидомик со светом для мальчиков. Свет включается внутри и снаружи дома подсвечивается элемент "Кит", выполняя функцию ночника.</p>
+                        <div class="container">
+                          <table class="table table-borderless">
+                            <tbody>
+                              <tr>
+                                <th scope="row" class="text-muted">Тип</th>
+                                <td>Бизиборд</td>
+                              </tr>
+                              <tr>
+                                <th scope="row" class="text-muted">Развитие навыков</th>
+                                <td>Буквы, цифры, Внимание, Воображение</td>
+                              </tr>
+                              <tr>
+                                <th scope="row" class="text-muted">Дополнительные функции</th>
+                                <td>Светящаяся, Развивающая</td>
+                              </tr>
+                              <tr>
+                                <th scope="row" class="text-muted">Дополнительные функции</th>
+                                <td>Развивающая, Светящаяся</td>
+                              </tr>
+                              <tr>
+                                <th scope="row" class="text-muted">Материал</th>
+                                <td>Дерево, Металл, Пластик</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Закрыть</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xxl-2">
+        <div class="card h-100 w-100" style="width: 18rem;">
+          <img src="img/card3/card3.png" class="card-img-top p-2" alt="Я играю">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title mb-3">"Я играю" бизидом со светом "Bunny Board"</h5>
+            <p class="card-text mb-2">"Я играю" - деревянный бизидомик со светом. Свет включается внутри и снаружи дома при помощи выключателя, выполняя функцию ночника.</p>
+            <h5 class="card-text">3540 р.</h5>
+            <div class="mt-auto">
+              <button class="btn btn-success add-to-cart w-100 mb-2" data-product="Я играю 2" data-price="3540">Добавить в корзину</button>
+              <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                Подробнее
+              </button>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" style="max-width: 800px;">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">"Я играю" бизидом со светом "Bunny Board"</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+            
+                    <div class="card h-100 w-100" style="width: 18rem;">
+                      <div id="carouselExampleDark3" class="carousel carousel-dark slide" style="margin: 0 auto; width: 500px;">
+                        <div class="carousel-indicators mb-0">
+                          <button type="button" data-bs-target="#carouselExampleDark3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark3" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark3" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark3" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark3" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark3" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark3" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark3" data-bs-slide-to="9" aria-label="Slide 10"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <video class="d-block w-100" autoplay loop>
+                              <source src="img/card3/card3.mp4" type="video/mp4">
+                            </video>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/card3/card3.png" class="d-block w-100" alt="..." style="height: 458px;">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/card3/card3_2.png" class="d-block w-100" alt="..." style="height: 458px;">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/card3/card3_3.png" class="d-block w-100" alt="..." style="height: 458px;">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/card3/card3_4.png" class="d-block w-100" alt="..." style="height: 458px;">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/card3/card3_5.png" class="d-block w-100" alt="..." style="height: 458px;">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/card3/card3_6.png" class="d-block w-100" alt="..." style="height: 458px;">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/card3/card3_7.png" class="d-block w-100" alt="..." style="height: 458px;">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/card3/card3_8.png" class="d-block w-100" alt="..." style="height: 458px;">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/card3/card3_9.png" class="d-block w-100" alt="..." style="height: 458px;">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark3" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark3" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text mb-2">"Я играю" - деревянный бизидомик со светом. Свет включается внутри и снаружи дома при помощи выключателя, выполняя функцию ночника.</p>
+                        <div class="container">
+                          <table class="table table-borderless">
+                            <tbody>
+                              <tr>
+                                <th scope="row" class="text-muted">Тип</th>
+                                <td>Бизиборд</td>
+                              </tr>
+                              <tr>
+                                <th scope="row" class="text-muted">Развитие навыков</th>
+                                <td>Буквы, цифры, Внимание, Воображение</td>
+                              </tr>
+                              <tr>
+                                <th scope="row" class="text-muted">Дополнительные функции</th>
+                                <td>Светящаяся, Развивающая</td>
+                              </tr>
+                              <tr>
+                                <th scope="row" class="text-muted">Дополнительные функции</th>
+                                <td>Развивающая, Светящаяся</td>
+                              </tr>
+                              <tr>
+                                <th scope="row" class="text-muted">Материал</th>
+                                <td>Дерево, Металл, Пластик</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Закрыть</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xxl-2">
+        <div class="card h-100 w-100" style="width: 18rem;">
+          <img src="img/card4/card4.png" class="card-img-top p-2" alt="Первый навык">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title mb-3">"Первый навык" бизидом со светом "Bunny Board"</h5>
+            <p class="card-text mb-2">"Первый навык" - деревянный бизидомик со светом. Свет включается внутри и снаружи дома при помощи выключателя, выполняя функцию ночника.</p>
+            <h5 class="card-text">4890 р.</h5>
+            <div class="mt-auto">
+              <button class="btn btn-success add-to-cart w-100 mb-2" data-product="Первый навык" data-price="4890">Добавить в корзину</button>
+              <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                Подробнее
+              </button>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" style="max-width: 800px;">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">"Первый навык" бизидом со светом "Bunny Board"</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+            
+                    <div class="card h-100 w-100" style="width: 18rem;">
+                      <div id="carouselExampleDark4" class="carousel carousel-dark slide" style="margin: 0 auto; width: 500px;">
+                        <div class="carousel-indicators mb-0">
+                          <button type="button" data-bs-target="#carouselExampleDark4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark4" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark4" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark4" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark4" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark4" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark4" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark4" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark4" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark4" data-bs-slide-to="9" aria-label="Slide 10"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="img/card4/card4.png" class="d-block w-100" alt="..." style="height: 458px;">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/card4/card4_2.png" class="d-block w-100" alt="..." style="height: 458px;">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/card4/card4_3.png" class="d-block w-100" alt="..." style="height: 458px;">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/card4/card4_4.png" class="d-block w-100" alt="..." style="height: 458px;">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/card4/card4_5.png" class="d-block w-100" alt="..." style="height: 458px;">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/card4/card4_6.png" class="d-block w-100" alt="..." style="height: 458px;">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/card4/card4_7.png" class="d-block w-100" alt="..." style="height: 458px;">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/card4/card4_8.png" class="d-block w-100" alt="..." style="height: 458px;">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/card4/card4_9.png" class="d-block w-100" alt="..." style="height: 458px;">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark4" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark4" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text mb-2">"Первый навык" - деревянный бизидомик со светом. Свет включается внутри и снаружи дома при помощи выключателя, выполняя функцию ночника.</p>
+                        <div class="container">
+                          <table class="table table-borderless">
+                            <tbody>
+                              <tr>
+                                <th scope="row" class="text-muted">Тип</th>
+                                <td>Бизиборд</td>
+                              </tr>
+                              <tr>
+                                <th scope="row" class="text-muted">Развитие навыков</th>
+                                <td>Внимание, Фигуры, цвета, Сюжетные игры, Счёт, Социальные навыки, Постановка речи, Память, Моторика, Логика</td>
+                              </tr>
+                              <tr>
+                                <th scope="row" class="text-muted">Цвет</th>
+                                <td>Белый, желтый, зеленый, зеркальный, красный</td>
+                              </tr>
+                              <tr>
+                                <th scope="row" class="text-muted">Дополнительные функции</th>
+                                <td>Развивающая, Светящаяся</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Закрыть</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xxl-2">
+        <div class="card h-100 w-100" style="width: 18rem;">
+          <img src="img/card5/card5.png" class="card-img-top p-2" alt="Все в одном">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title mb-3">"Все в одном" бизидом со светом "Bunny Board"</h5>
+            <p class="card-text mb-2">"Все в одном" - деревянный бизидомик со светом. Свет включается внутри и снаружи дома при помощи выключателя, выполняя функцию ночника.</p>
+            <h5 class="card-text">6990 р.</h5>
+            <div class="mt-auto">
+              <button class="btn btn-success add-to-cart w-100 mb-2" data-product="Все в одном" data-price="6990">Добавить в корзину</button>
+              <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+                Подробнее
+              </button>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" style="max-width: 800px;">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">"Все в одном" бизидом со светом "Bunny Board"</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+            
+                    <div class="card h-100 w-100" style="width: 18rem;">
+                      <div id="carouselExampleDark5" class="carousel carousel-dark slide" style="margin: 0 auto; width: 500px;">
+                        <div class="carousel-indicators mb-0">
+                          <button type="button" data-bs-target="#carouselExampleDark5" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark5" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark5" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark5" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark5" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark5" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark5" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark5" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark5" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark5" data-bs-slide-to="9" aria-label="Slide 10"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="img/card5/card5.png" class="d-block w-100" alt="..." style="height: 458px;">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/card5/card5_2.png" class="d-block w-100" alt="..." style="height: 458px;">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/card5/card5_3.png" class="d-block w-100" alt="..." style="height: 458px;">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/card5/card5_4.png" class="d-block w-100" alt="..." style="height: 458px;">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/card5/card5_5.png" class="d-block w-100" alt="..." style="height: 458px;">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/card5/card5_6.png" class="d-block w-100" alt="..." style="height: 458px;">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/card5/card5_7.png" class="d-block w-100" alt="..." style="height: 458px;">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/card5/card5_8.png" class="d-block w-100" alt="..." style="height: 458px;">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/card5/card5_9.png" class="d-block w-100" alt="..." style="height: 458px;">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark5" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark5" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text mb-2">"Все в одном" - деревянный бизидомик со светом. Свет включается внутри и снаружи дома при помощи выключателя, выполняя функцию ночника.</p>
+                        <div class="container">
+                          <table class="table table-borderless">
+                            <tbody>
+                              <tr>
+                                <th scope="row" class="text-muted">Тип</th>
+                                <td>Бизиборд</td>
+                              </tr>
+                              <tr>
+                                <th scope="row" class="text-muted">Развитие навыков</th>
+                                <td>Внимание, Воображение, Грамматика, Кругозор, Логика, Моторика, Память, Постановка речи, Социальные навыки</td>
+                              </tr>
+                              <tr>
+                                <th scope="row" class="text-muted">Цвет</th>
+                                <td>Разноцветный</td>
+                              </tr>
+                              <tr>
+                                <th scope="row" class="text-muted">Материал</th>
+                                <td>Дерево, Пластик, Металл</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Закрыть</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <!-- Модальное окно для увеличенного изображения -->
+  <div class="modal fade" id="fullscreenModal" tabindex="-1" aria-labelledby="fullscreenModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content d-flex align-items-center justify-content-center">
+        <div class="modal-body p-0">
+          <button type="button" class="btn-close position-absolute top-0 end-0 p-3" data-bs-dismiss="modal" aria-label="Close"></button>
+          <img id="fullscreenImage" src="" alt="Увеличенное изображение" class="img-fluid w-100">
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Корзина -->
+  <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="cartModalLabel">Корзина</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <ul id="cartItems" class="list-group mb-3">
+            <!-- Здесь будут добавляться товары -->
+          </ul>
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <strong>Общая сумма:</strong>
+            <span id="cartTotalPrice" class="text-success">0 р.</span>
+          </div>
+          <form id="orderForm">
+            <div class="mb-3">
+              <label for="name" class="form-label">Имя</label>
+              <input type="text" class="form-control" id="name" placeholder="Введите ваше имя" required>
+            </div>
+            <div class="mb-3">
+              <label for="phone" class="form-label">Телефон</label>
+              <input type="tel" class="form-control" id="phone" placeholder="Введите ваш телефон" required>
+            </div>
+            <button type="submit" class="btn btn-warning w-100">Оформить заказ</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="text-dark text-center py-3 position-fixed w-100 bottom-0" style="background-color: #e3f2fd;">
+    © 2024 Bunny Board. Все права защищены.
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
