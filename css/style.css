@@ -55,15 +55,11 @@
   background-color: #0056b3;
 }
 
-/* .modal-dialog {
-  max-width: 800px !important;
-} */
-
 .modal-body img {
     cursor: zoom-in;
 }
 
-/* Отзывы */
+
 #reviewsContainer .card {
   border: 1px solid #ddd;
   border-radius: 10px;
@@ -81,7 +77,6 @@
   margin-bottom: 10px;
 }
 
-/* Текст отзыва */
 #reviewsContainer .card .card-body {
   padding: 10px;
 }
@@ -91,7 +86,7 @@
   line-height: 1.5;
 }
 
-/* Адаптивность */
+
 @media (max-width: 768px) {
   #reviewsContainer .card {
     margin-bottom: 15px;
@@ -101,15 +96,10 @@
 
 #fullscreenImage {
   max-width: 100vw;
-  /* Максимальная ширина — 100% ширины экрана */
   max-height: 100vh;
-  /* Максимальная высота — 100% высоты экрана */
   object-fit: contain;
-  /* Масштабируем изображение, сохраняя пропорции */
   display: block;
-  /* Убираем возможные отступы */
   margin: 0 auto;
-  /* Центрируем изображение */
 }
 
 #fullscreenModal {
@@ -121,30 +111,21 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  /* Высота окна равна высоте экрана */
   margin: 0;
-  /* Убираем стандартные отступы Bootstrap */
 }
 
-
-/* Стили только для увеличенного изображения */
 #fullscreenModal .btn-close {
   position: absolute !important;
   top: 10px !important;
-  /* Отступ сверху */
   right: 10px !important;
-  /* Отступ справа */
   z-index: 1055;
-  /* Поверх изображения */
   background-color: #fff;
-  /* Полупрозрачный фон кнопки */
   border-radius: 50%;
   padding: 5px;
 }
 
 #fullscreenModal .btn-close:hover {
   background-color: rgba(0, 0, 0, 0.6);
-  /* Более темный фон при наведении */
 }
 
 #fullscreenModal .modal-content {
@@ -158,16 +139,12 @@
 
 #fullscreenModal .modal-content img {
   max-width: 100%;
-  /* Не шире ширины экрана */
   max-height: 100vh;
-  /* Не выше 90% высоты экрана */
   object-fit: contain;
-  /* Сохраняем пропорции */
 }
 
 #fullscreenModal .modal-body {
   padding: 0;
-  /* Убираем отступы */
 }
 
 #fullscreenModal .img-fullscreen {
